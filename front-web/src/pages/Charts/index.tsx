@@ -12,8 +12,8 @@ type PieChartData = {
 }
 
 type BarChartData = {
-    y: string[];
-    x: number[];
+    y: string;
+    x: number;
 }
 
 const initialPieData = {
@@ -21,7 +21,7 @@ const initialPieData = {
    series: []
 }
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-tanaka.herokuapp.com';
 
 const Charts = () => {
     const [barChartData, setBarChartData] = useState<BarChartData[]>([]);
