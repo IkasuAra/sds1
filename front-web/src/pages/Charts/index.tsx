@@ -34,7 +34,7 @@ const Charts = () => {
             const gamesResponse = await axios.get(`${BASE_URL}/games`);
             
             const barData = buildBarSeries(gamesResponse.data, recordsResponse.data.content);
-            setBarChartData(barData);
+            console.log(barData)
 
             const platformChartData = getPlatformChartData(recordsResponse.data.content);
             setPlatformData(platformChartData);
